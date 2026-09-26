@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #FFFFFF;
+    --card-bg: #FFFFFF;
+    --navy-primary: #0F1E36;
+    --navy-secondary: #1E3A5F;
+    --navy-light: #2A4365;
+    --accent-orange: #FF6600;
+    --accent-orange-hover: #E65C00;
+    --accent-orange-light: #FFEDD5;
+    --text-primary: #0F1E36;
+    --text-secondary: #5A6E85;
+    --border-subtle: rgba(15, 30, 54, 0.1);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Manrope', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.035em;
+    font-weight: 700;
+  }
+
+}
+
+/* Light Theme Glassmorphism Specifications */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(15, 30, 54, 0.08);
+  box-shadow: 0 10px 30px -5px rgba(15, 30, 54, 0.06), 0 4px 12px -2px rgba(15, 30, 54, 0.03);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(15, 30, 54, 0.08);
+  box-shadow: 0 12px 32px -8px rgba(15, 30, 54, 0.08);
+}
+
+.glass-card-interactive {
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 30, 54, 0.09);
+  box-shadow: 0 4px 20px -2px rgba(15, 30, 54, 0.04);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-interactive:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 102, 0, 0.4);
+  box-shadow: 0 20px 40px -10px rgba(15, 30, 54, 0.12), 0 0 16px -4px rgba(255, 102, 0, 0.15);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 30, 54, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 102, 0, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

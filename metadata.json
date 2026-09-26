@@ -1,0 +1,7 @@
+{
+  "name": "Power Ace Solutions | Solar & Electrical Solutions",
+  "description": "Power Ace Solutions provides solar, electrical, UPS and CCTV solutions for homes and businesses in Islamabad and Rawalpindi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
