@@ -1,4 +1,9 @@
 import { ServiceItem, ProjectItem, TimelineStep, FAQItem } from '../types';
+import heroClearVillaImg from '../assets/images/hero_solar_clear_villa_1790407094355.jpg';
+import heroArchitectureImg from '../assets/images/hero_solar_architecture_1790404731096.jpg';
+import commercialSolarImg from '../assets/images/solar_modern_commercial_1790404748718.jpg';
+import inverterStorageImg from '../assets/images/ups_inverter_system_1790404772101.jpg';
+import cctvSecurityImg from '../assets/images/cctv_security_system_1790404787446.jpg';
 
 export const COMPANY_INFO = {
   name: 'Power Ace Solutions (Private) Limited',
@@ -18,11 +23,11 @@ export const COMPANY_INFO = {
 };
 
 export const IMAGES = {
-  heroClearVilla: '/src/assets/images/hero_solar_clear_villa_1790407094355.jpg',
-  heroArchitecture: '/src/assets/images/hero_solar_architecture_1790404731096.jpg',
-  commercialSolar: '/src/assets/images/solar_modern_commercial_1790404748718.jpg',
-  inverterStorage: '/src/assets/images/ups_inverter_system_1790404772101.jpg',
-  cctvSecurity: '/src/assets/images/cctv_security_system_1790404787446.jpg',
+  heroClearVilla: heroClearVillaImg,
+  heroArchitecture: heroArchitectureImg,
+  commercialSolar: commercialSolarImg,
+  inverterStorage: inverterStorageImg,
+  cctvSecurity: cctvSecurityImg,
 };
 
 
